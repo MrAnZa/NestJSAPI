@@ -23,7 +23,7 @@ export class MensagesController {
     }
 
     @Get()
-    getAll(@Res() resonse){
+    getAll(@Res() response){
         this.mensajeService.getAll().then(
             mensajesList =>{
                 response.status(HttpStatus.OK).json(mensajesList);
